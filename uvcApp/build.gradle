@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 31
     buildToolsVersion '28.0.3'
 
     defaultConfig {
         applicationId "org.easydarwin.easyrtmp"
         minSdkVersion 19
-        targetSdkVersion 26
+        targetSdkVersion 31
 //        versionCode generateVersionCode()
 //        versionName generateVersionName()
         versionCode 14200826
@@ -89,9 +89,9 @@ dependencies {
 
     implementation project(':library')
 
-    implementation 'com.tencent.bugly:crashreport_upgrade:latest.release'
+    implementation 'com.tencent.bugly:crashreport_upgrade:1.6.1'
     //其中latest.release指代最新版本号，也可以指定明确的版本号，例如1.2.0
-    implementation 'com.tencent.bugly:nativecrashreport:latest.release'
+    implementation 'com.tencent.bugly:nativecrashreport:3.9.2'
     //其中latest.release指代最新版本号，也可以指定明确的版本号，例如2.2.0
 
     implementation 'io.reactivex.rxjava2:rxjava:2.1.6'

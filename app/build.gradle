@@ -1,13 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion '28.0.3'
+    compileSdkVersion 31
 
     defaultConfig {
         applicationId "org.easydarwin.easyrtmp"
         minSdkVersion 19
-        targetSdkVersion 26
+        targetSdkVersion 31
 //        versionCode generateVersionCode()
 //        versionName generateVersionName()
         versionCode 14221208
@@ -95,6 +94,9 @@ dependencies {
     implementation 'android.arch.lifecycle:reactivestreams:1.0.0'
     annotationProcessor "android.arch.lifecycle:compiler:1.0.0"
     annotationProcessor "android.arch.lifecycle:compiler:1.0.0"
+    implementation 'com.tencent.bugly:crashreport_upgrade:1.6.1'
+    //其中latest.release指代最新版本号，也可以指定明确的版本号，例如1.2.0
+    implementation 'com.tencent.bugly:nativecrashreport:3.9.2'
 
     implementation(name: 'libuvccamera-release', ext: 'aar') {
         exclude module: 'support-v4'
